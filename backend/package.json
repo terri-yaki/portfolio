@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for a full-stack application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.3",
+    "npm-force-resolutions": "^0.0.10",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
