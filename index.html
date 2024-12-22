@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terry Lee - Portfolio</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Material Icons -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header id="header">
+    <div class="header-left">
+      <div class="logo">Terry Lee</div>
+    </div>
+    <div class="header-center">
+      <nav class="nav-links">
+        <a href="#about">
+          <span class="material-icons">face</span>About
+        </a>
+        <a href="#experience">
+          <span class="material-icons">work</span>Experience
+        </a>
+        <a href="#projects">
+          <span class="material-icons">build_circle</span>Projects
+        </a>
+        <a href="#certifications">
+          <span class="material-icons">verified</span>Certifications
+        </a>
+        <a href="#contact">
+          <span class="material-icons">contacts</span>Contact
+        </a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button class="theme-toggle" id="themeToggle">
+        <span class="material-icons">dark_mode</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <img
+      src="\portfolio\asset\img\terry_icon.png"
+      alt="Terry's Portrait"
+      class="portrait"
+    />
+    <p><strong>Junior Programmer (Software Developer) @ Hong Kong Hospital Authority</strong></p>
+    <p>Hong Kong SAR</p>
+    <p>
+      Computer Science graduate from University of Surrey, specialized in AI &amp; computer security.
+      During my academic journey, I worked on software engineering and full stack development
+      as my internship. I believe my background can bring you and the team new ideas and 
+      effective problem-solving skills.
+    </p>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <h3>Hong Kong Hospital Authority</h3>
+      <span>Junior Programmer (Software Developer)</span> |
+      <span>November 2024 - Present (2 months)</span>
+      <p>• Developed and maintained ERP system for Hospital Authority</p>
+      <p>• Assisted and supported staff requests from different departments</p>
+      <p>• Ensured smooth functioning of web pages and features</p>
+      <p>• Guided users through processes and migrations from SharePoint to new system</p>
+      <p>• Collaborated with team members on system improvements</p>
+      <p>• Utilized ASP and .NET programming languages for development tasks</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>University of Surrey</h3>
+      <span>Event Assistant</span> |
+      <span>October 2022 - June 2023 (9 months)</span>
+      <p>• Helped with university open day</p>
+      <p>• Guided and introduced courses to visitors</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Business Owner</h3>
+      <span>November 2022 - March 2023 (5 months)</span>
+      <p>• Watch selling business</p>
+      <p>• Ran with Instagram and Facebook posts, ads</p>
+      <p>• Used Shopify for store management</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Video Editor (Self-employed)</h3>
+      <span>August 2020 - December 2020 (5 months)</span>
+      <p>• Clipped YouTube lives and edited them for a translation channel</p>
+      <p>• Achieved 23.4k subscribers at peak (non-profit content)</p>
+      <p>• Added Chinese subtitles for English-speaking videos</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Miracle Paper Craft</h3>
+      <span>Fullstack Developer Intern</span> | 
+      <span>September 2019 - August 2020 (1 year)</span>
+      <p>• Handled API integration and rebuilt logic (10% faster processing)</p>
+      <p>• Developed and maintained web apps with Node.js</p>
+      <p>• Optimized front-end for performance across devices/browsers</p>
+      <p>• Provided technical support and guidance to colleagues</p>
+      <p>• Managed Email Services</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Ricowell Development Ltd</h3>
+      <span>Software Engineer Intern</span> | 
+      <span>July 2018 - June 2019 (1 year)</span>
+      <p>• Created SQL queries and unit tests</p>
+      <p>• Fixed code, speeding algorithm by 15%</p>
+      <p>• Administered Linux (Ubuntu OS)</p>
+      <p>• Documented user guidance for staff</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <!-- DocGPT (ReadmeGPT) -->
+    <div class="project-item">
+      <h3>DocGPT (ReadmeGPT)</h3>
+      <span>Jan 2024 - Feb 2024</span>
+      <p>• Python-based CLI application using OpenAI API.</p>
+      <p>• Automatically generates README.md files for undocumented GitHub repositories.</p>
+      <p>• Scans repositories to create comprehensive documentation for developers.</p>
+    </div>
+
+    <!-- Adaptive Route Planner -->
+    <div class="project-item">
+      <h3>Adaptive Route Planner (Final Year Project)</h3>
+      <p>• Developed an adaptive route planner web application.</p>
+      <p>• Real-time route planning based on user preferences.</p>
+      <p>• Built with Python and Flask, integrating OpenStreetMap and Nominatim APIs.</p>
+      <p>• Frontend designed with JavaScript, HTML, and CSS.</p>
+    </div>
+
+    <!-- Airbnb Development Project Proposal -->
+    <div class="project-item">
+      <h3>Airbnb Development Project Proposal (Project Management)</h3>
+      <p>• Collaborative project in a team of 5.</p>
+      <p>• Developed a proposal to modernize properties near Brighton and Hove waterfront.</p>
+      <p>• Contributed to financial analysis, scoping, and budgeting using Microsoft Project.</p>
+    </div>
+
+    <!-- Hangman in Assembly -->
+    <div class="project-item">
+      <h3>Hangman in Assembly</h3>
+      <p>• Built a Hangman game entirely in Assembly language.</p>
+      <p>• Coursework project showcasing low-level programming skills.</p>
+    </div>
+
+    <!-- Quiz App for Computer Science Students -->
+    <div class="project-item">
+      <h3>Quiz App for Computer Science Students</h3>
+      <p>• Group project to create a quiz application for CS students.</p>
+      <p>• Full-stack development with Node.js, HTML, and CSS.</p>
+      <p>• Integrated a quiz API for dynamic questions and added a ranking system.</p>
+    </div>
+
+    <!-- Skin Cancer Detection and Classification -->
+    <div class="project-item">
+      <h3>Skin Cancer Detection and Classification</h3>
+      <p>• Created a skin cancer detection system using the Ham10000 dataset.</p>
+      <p>• Experimented with models like VGG16_bn and ResNet18, integrating BYOL.</p>
+      <p>• Focused on data processing, augmentation, and model tuning for enhanced performance.</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section" id="certifications">
+    <h2>Certifications</h2>
+    <ul class="cert-list">
+      <li>Generative AI: Introduction and Applications</li>
+      <li>Generative AI: Prompt Engineering Basics</li>
+      <li>Introduction to Software Engineering</li>
+      <li>Introduction to Artificial Intelligence (AI)</li>
+    </ul>
+  </section>
+
+  <!-- Fun Fact -->
+  <section class="section" id="fun-fact">
+    <h2>Fun Fact</h2>
+    <blockquote>
+      I'm a big FPS fan, with over 4,000 hours spent on Overwatch, Apex Legends,
+      and Rainbow Six Siege combined!
+    </blockquote>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>
+        <span class="material-icons">mail</span>
+        <a href="mailto:hoyulee@yahoo.com.hk">hoyulee@yahoo.com.hk</a>
+      </p>
+      <p>
+        <span class="material-icons">link</span>
+        <a href="https://linkedin.com/in/terrylhyyy" target="_blank">LinkedIn</a>
+      </p>
+      <p>
+        <span class="material-icons">code</span>
+        <a href="https://github.com/terrylhyyy" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Go to top button -->
+  <button id="toTop">
+    <span class="material-icons">keyboard_arrow_up</span>
+  </button>
+
+  <script>
+    const loader = document.getElementById('loader');
+    const body = document.body;
+    const themeToggle = document.getElementById('themeToggle');
+    const toTopBtn = document.getElementById('toTop');
+    const header = document.getElementById('header');
+
+    // Loader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 500);
+    });
+
+    // Dark/Light Mode Toggle
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      header.classList.toggle('dark-mode');
+      loader.classList.toggle('dark-mode');
+    });
+
+    // Go to top button
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        toTopBtn.classList.add('show');
+      } else {
+        toTopBtn.classList.remove('show');
+      }
+    });
+
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
