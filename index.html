@@ -274,6 +274,11 @@
     const toTopBtn = document.getElementById('toTop');
     const header = document.getElementById('header');
 
+    // redirect portfolio to index
+    if (window.location.hostname === "terri-yaki.github.io") {
+      window.location.href = "https://terriyaki.cc";
+    }
+
     // Loader
     window.addEventListener('load', () => {
       setTimeout(() => {
