@@ -1,6 +1,6 @@
 will be rebuilt with flask soon.
 
-[portfolio website](https://terriyaki.cc)
+[https://terriyaki.cc](https://terriyaki.cc)
 
 ## Table of Contents
 
