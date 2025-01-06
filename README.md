@@ -9,11 +9,6 @@ will be rebuilt with flask soon.
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Customization](#customization)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
