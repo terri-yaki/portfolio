@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ title if title else 'Terry - Portfolio' }}</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Material Icons -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header id="header">
+    <!-- Left: Logo & Hamburger Menu -->
+    <div class="header-left">
+      <button class="menu-toggle" id="menuToggle">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+
+    <!-- Center: Desktop Nav links (hidden on mobile) -->
+    <div class="header-center">
+      <nav class="nav-links desktop-nav">
+        <a href="#about">
+          <span class="material-icons">face</span>About
+        </a>
+        <a href="#experience">
+          <span class="material-icons">work</span>Experience
+        </a>
+        <a href="#projects">
+          <span class="material-icons">build_circle</span>Projects
+        </a>
+        <a href="#certifications">
+          <span class="material-icons">verified</span>Certifications
+        </a>
+        <a href="#contact">
+          <span class="material-icons">contacts</span>Contact
+        </a>
+      </nav>
+    </div>
+
+    <!-- Right: Theme Toggle -->
+    <div class="header-right">
+      <button class="theme-toggle" id="themeToggle">
+        <span class="material-icons">dark_mode</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <span class="material-icons close-btn" id="closeBtn">close</span>
+      <h3>:3</h3>
+    </div>
+    <nav class="nav-links mobile-nav-links">
+      <a href="#about">
+        <span class="material-icons">face</span>About
+      </a>
+      <a href="#experience">
+        <span class="material-icons">work</span>Experience
+      </a>
+      <a href="#projects">
+        <span class="material-icons">build_circle</span>Projects
+      </a>
+      <a href="#certifications">
+        <span class="material-icons">verified</span>Certifications
+      </a>
+      <a href="#contact">
+        <span class="material-icons">contacts</span>Contact
+      </a>
+    </nav>
+  </div>
+
+  <!-- Main Content (Jinja block) -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Go to top button -->
+  <button id="toTop">
+    <span class="material-icons">keyboard_arrow_up</span>
+  </button>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

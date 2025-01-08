@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="section admin-section" id="admin-section">
+  <h2>Admin Panel</h2>
+  <p>Manage your portfolio content here.</p>
+
+  <!-- Flash messages -->
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul class="flash-messages">
+        {% for msg in messages %}
+          <li>{{ msg }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <div class="admin-container">
+
+    <!-- EXPERIENCE LIST -->
+    <div class="admin-list">
+      <h3>Experience</h3>
+      {% if data.experience %}
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Company</th>
+            <th>Period</th>
+            <th>Details (multiline)</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for idx, exp in enumerate(data.experience) %}
+          <tr>
+            <!-- Inline Update Form -->
+            <form method="POST" action="{{ url_for('admin') }}">
+              <input type="hidden" name="section" value="experience">
+              <input type="hidden" name="action" value="update">
+              <input type="hidden" name="item_id" value="{{ idx }}">
+              
+              <td>
+                <input type="text" name="role" value="{{ exp.role }}" />
+              </td>
+              <td>
+                <input type="text" name="company" value="{{ exp.company }}" />
+              </td>
+              <td>
+                <input type="text" name="period" value="{{ exp.period }}" />
+              </td>
+              <td>
+                <!-- Convert details to multiline text -->
+                <textarea name="details" rows="3" style="resize: vertical;">
+{% for line in exp.details %}{{ line }}{% if not loop.last %}\n{% endif %}{% endfor %}
+                </textarea>
+              </td>
+              <td>
+                <!-- Update button -->
+                <button type="submit" class="admin-btn">Update</button>
+            </form>
+                <!-- Delete button (separate form) -->
+                <form method="POST" action="{{ url_for('admin') }}" style="display:inline;">
+                  <input type="hidden" name="section" value="experience">
+                  <input type="hidden" name="action" value="delete">
+                  <input type="hidden" name="item_id" value="{{ idx }}">
+                  <button type="submit" class="admin-btn delete-btn">Delete</button>
+                </form>
+              </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p>No experience items found.</p>
+      {% endif %}
+
+      <!-- ADD EXPERIENCE FORM -->
+      <div class="admin-form">
+        <h4>Add New Experience</h4>
+        <form method="POST">
+          <input type="hidden" name="section" value="experience">
+          <input type="hidden" name="action" value="add">
+
+          <label>Role</label>
+          <input type="text" name="role" placeholder="Software Engineer" required>
+
+          <label>Company</label>
+          <input type="text" name="company" placeholder="Company Name" required>
+
+          <label>Period</label>
+          <input type="text" name="period" placeholder="e.g. 2021 - Present" required>
+
+          <label>Details (multiline)</label>
+          <textarea name="details" rows="3" style="resize: vertical;"></textarea>
+
+          <button type="submit" class="admin-btn">Add Experience</button>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- PROJECTS LIST -->
+    <div class="admin-list">
+      <h3>Projects</h3>
+      {% if data.projects %}
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Details</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for idx, proj in enumerate(data.projects) %}
+          <tr>
+            <form method="POST">
+              <input type="hidden" name="section" value="projects">
+              <input type="hidden" name="action" value="update">
+              <input type="hidden" name="item_id" value="{{ idx }}">
+
+              <td>
+                <input type="text" name="title" value="{{ proj.title }}" />
+              </td>
+              <td>
+                <textarea name="details" rows="3" style="resize: vertical;">
+{% for line in proj.details %}{{ line }}{% if not loop.last %}\n{% endif %}{% endfor %}
+                </textarea>
+              </td>
+              <td>
+                <!-- Update -->
+                <button type="submit" class="admin-btn">Update</button>
+            </form>
+                <!-- Delete -->
+                <form method="POST" style="display:inline;">
+                  <input type="hidden" name="section" value="projects">
+                  <input type="hidden" name="action" value="delete">
+                  <input type="hidden" name="item_id" value="{{ idx }}">
+                  <button type="submit" class="admin-btn delete-btn">Delete</button>
+                </form>
+              </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p>No project items found.</p>
+      {% endif %}
+
+      <!-- ADD PROJECT FORM -->
+      <div class="admin-form">
+        <h4>Add New Project</h4>
+        <form method="POST">
+          <input type="hidden" name="section" value="projects">
+          <input type="hidden" name="action" value="add">
+
+          <label>Title</label>
+          <input type="text" name="title" placeholder="My Awesome Project" required>
+
+          <label>Details (multiline)</label>
+          <textarea name="details" rows="3" style="resize: vertical;"></textarea>
+
+          <button type="submit" class="admin-btn">Add Project</button>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- CERTIFICATIONS LIST -->
+    <div class="admin-list">
+      <h3>Certifications</h3>
+      {% if data.certifications %}
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Certification</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for idx, cert in enumerate(data.certifications) %}
+          <tr>
+            <form method="POST">
+              <input type="hidden" name="section" value="certifications">
+              <input type="hidden" name="action" value="update">
+              <input type="hidden" name="item_id" value="{{ idx }}">
+
+              <td>
+                <input type="text" name="cert" value="{{ cert }}" />
+              </td>
+              <td>
+                <!-- Update -->
+                <button type="submit" class="admin-btn">Update</button>
+            </form>
+                <!-- Delete -->
+                <form method="POST" style="display:inline;">
+                  <input type="hidden" name="section" value="certifications">
+                  <input type="hidden" name="action" value="delete">
+                  <input type="hidden" name="item_id" value="{{ idx }}">
+                  <button type="submit" class="admin-btn delete-btn">Delete</button>
+                </form>
+              </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p>No certificates found.</p>
+      {% endif %}
+
+      <!-- ADD CERTIFICATE FORM -->
+      <div class="admin-form">
+        <h4>Add New Certificate</h4>
+        <form method="POST">
+          <input type="hidden" name="section" value="certifications">
+          <input type="hidden" name="action" value="add">
+
+          <label>Certification Name</label>
+          <input type="text" name="cert" placeholder="e.g. AWS Solutions Architect" required>
+
+          <button type="submit" class="admin-btn">Add Certificate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

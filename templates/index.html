@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- About Section -->
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <img
+    src="{{ url_for('static', filename='img/terry_icon.png') }}"
+    alt="Terry's Portrait"
+    class="portrait"
+  />
+  <h3>{{ data.about.name }}</h3>
+  <p>{{ data.about.title }}</p>
+  <p>{{ data.about.bio }}</p>
+</section>
+
+<!-- Experience Section -->
+<section class="section" id="experience">
+  <h2>Experience</h2>
+  {% for exp in data.experience %}
+  <div class="experience-item">
+    <h3>{{ exp.role }}</h3>
+    <span>{{ exp.company }}</span> | <span>{{ exp.period }}</span><br><br>
+    {% for line in exp.details %}
+      <p>• {{ line }}</p>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+
+<!-- Projects Section -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  {% for proj in data.projects %}
+  <div class="project-item">
+    <h3>{{ proj.title }}</h3><br>
+    {% for line in proj.details %}
+      <p>• {{ line }}</p>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+
+<!-- Certifications -->
+<section class="section" id="certifications">
+  <h2>Certifications</h2>
+  <ul class="cert-list">
+    {% for cert in data.certifications %}
+      <li>{{ cert }}</li>
+    {% endfor %}
+  </ul>
+  <i><h5>More details on my LinkedIn profile with verification link.</h5></i>
+</section>
+
+<!-- Fun Fact -->
+<section class="section" id="fun-fact">
+  <h2>Fun Fact</h2>
+  <blockquote>
+    {{ data.fun_fact }}
+  </blockquote>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-info">
+    <p>
+      <span class="material-icons">mail</span>
+      <a href="mailto:hoyulee@yahoo.com.hk">hoyulee@yahoo.com.hk</a>
+    </p>
+    <p>
+      <span class="material-icons">link</span>
+      <a href="https://linkedin.com/in/terrylhyyy" target="_blank">LinkedIn</a>
+    </p>
+    <p>
+      <span class="material-icons">code</span>
+      <a href="https://github.com/terri-yaki" target="_blank">GitHub</a>
+    </p>
+  </div>
+</section>
+
+{% endblock %}

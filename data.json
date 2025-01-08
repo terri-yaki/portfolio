@@ -1,0 +1,59 @@
+{
+    "about": {
+      "name": "Terry Lee",
+      "title": "Junior Programmer (Software Developer) @ Hong Kong Hospital Authority",
+      "bio": "Hey there, I’m Terry. I’m a Computer Science grad from the University of Surrey, now a Junior Programmer at the Hong Kong Hospital Authority..."
+    },
+    "experience": [
+      {
+        "role": "Junior Programmer (Software Developer)",
+        "company": "Hong Kong Hospital Authority",
+        "period": "November 2024 - Present",
+        "details": [
+          "Developed and maintained ERP system for Hospital Authority",
+          "Assisted and supported staff requests from different departments",
+          "Ensured smooth functioning of web pages and features",
+          "Guided users through migrations from SharePoint to new system",
+          "Collaborated with team members on system improvements",
+          "Utilized ASP, HTML, JS for development tasks"
+        ]
+      },
+      {
+        "role": "Event Assistant",
+        "company": "University of Surrey",
+        "period": "October 2022 - June 2023 (9 months)",
+        "details": [
+          "Helped with university open day",
+          "Guided and introduced courses to visitors"
+        ]
+      }
+
+    ],
+    "projects": [
+      {
+        "title": "DocGPT (ReadmeGPT)",
+        "details": [
+          "Python-based CLI application using OpenAI API.",
+          "Automatically generates README.md files for undocumented GitHub repositories.",
+          "Scans repositories to create comprehensive documentation for developers."
+        ]
+      },
+      {
+        "title": "Adaptive Route Planner (Final Year Project)",
+        "details": [
+          "Developed an adaptive route planner web application.",
+          "Real-time route planning based on user preferences.",
+          "Built with Python and Flask, integrating OpenStreetMap and Nominatim APIs.",
+          "Frontend designed with JavaScript, HTML, and CSS."
+        ]
+      }
+    ],
+    "certifications": [
+      "Generative AI: Introduction and Applications",
+      "Generative AI: Prompt Engineering Basics",
+      "Introduction to Software Engineering",
+      "Introduction to Artificial Intelligence (AI)"
+    ],
+    "fun_fact": "I'm a big FPS fan, with over 4,000 hours spent on Overwatch, Apex Legends, and Rainbow Six Siege combined! I also love cats and dogs if you can't tell."
+  }
+  
