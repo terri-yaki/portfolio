@@ -1,7 +1,3 @@
-will be rebuilt with flask soon.
-
-[**ROADMAP PROJECT LINK**](https://roadmap.sh/projects/single-page-cv)
-
 [https://terriyaki.cc](https://terriyaki.cc)
 
 ## Table of Contents
