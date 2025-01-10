@@ -1,4 +1,4 @@
-#app.py
+# app.py
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
 import os
@@ -153,5 +153,12 @@ def admin():
 
     return render_template('admin.html', data=data)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
+
+# run.py
+from waitress import serve
+from app import app
+
+if __name__ == "__main__":
+    serve(app, host="0.0.0.0", port=1808)
