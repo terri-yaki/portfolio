@@ -128,7 +128,7 @@
         ]
       },
       {
-        "title": "Skin Cancer Detection and Classification",
+        "title": "Skin Cancer Detection and Classification (AI Image Classification Project)",
         "details": [
           "Collaborated in a team of 3 to create a machine learning system for detecting skin cancer.",
           "Used the Ham10000 dataset, applying data preprocessing and augmentation techniques.",
