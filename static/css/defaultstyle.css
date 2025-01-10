@@ -196,8 +196,25 @@ header {
 }
 
 /* Sections */
-.section {
+.first-section {
   padding: 6rem 1rem 0rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.first-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--highlight-color);
+}
+.first-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 1rem 0rem;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -255,10 +272,11 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Certifications list */
-.cert-list li {
+/* general list */
+.list li {
   margin-bottom: 0.5rem;
 }
+
 
 /* Fun Fact blockquote */
 blockquote {
