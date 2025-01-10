@@ -1,3 +1,5 @@
+<!--BURGER MENU + NAV BAR (MOBILE + WEB)-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
   />
   <!-- External CSS -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/defaultstyle.css') }}" />
 </head>
 <body>
   <!-- Loader -->
@@ -33,26 +35,29 @@
     </div>
 
     <!-- Center: Desktop Nav links (hidden on mobile) -->
-    <div class="header-center">
-      <nav class="nav-links desktop-nav">
-        <a href="#about">
-          <span class="material-icons">face</span>About
-        </a>
-        <a href="#experience">
-          <span class="material-icons">work</span>Experience
-        </a>
-        <a href="#projects">
-          <span class="material-icons">build_circle</span>Projects
-        </a>
-        <a href="#certifications">
-          <span class="material-icons">verified</span>Certifications
-        </a>
-        <a href="#contact">
-          <span class="material-icons">contacts</span>Contact
-        </a>
-      </nav>
-    </div>
-
+<div class="header-center">
+  <nav class="nav-links desktop-nav">
+    <a href="{{ url_for('home', _anchor='about') }}">
+      <span class="material-icons">face</span>About
+    </a>
+    <a href="{{ url_for('home', _anchor='experience') }}">
+      <span class="material-icons">work</span>Experience
+    </a>
+    <a href="{{ url_for('home', _anchor='projects') }}">
+      <span class="material-icons">build_circle</span>Projects
+    </a>
+    <a href="{{ url_for('home', _anchor='certifications') }}">
+      <span class="material-icons">verified</span>Certifications
+    </a>
+    <a href="{{ url_for('home', _anchor='contact') }}">
+      <span class="material-icons">contacts</span>Contact
+    </a>
+    {% comment %} <!-- Admin Link --> //FIXME remove comment
+    <a href="{{ url_for('admin') }}" class="admin-link">
+      <span class="material-icons">admin_panel_settings</span>Admin
+    </a> {% endcomment %}
+  </nav>
+</div>
     <!-- Right: Theme Toggle -->
     <div class="header-right">
       <button class="theme-toggle" id="themeToggle">
@@ -83,6 +88,10 @@
       <a href="#contact">
         <span class="material-icons">contacts</span>Contact
       </a>
+      {% comment %} <!-- Admin Link --> //FIXME remove comment
+      <a href="{{ url_for('admin') }}" class="admin-link" display="none">
+        <span class="material-icons">admin_panel_settings</span>Admin
+      </a> {% endcomment %}
     </nav>
   </div>
 

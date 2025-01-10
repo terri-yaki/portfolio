@@ -2,7 +2,7 @@
     "about": {
       "name": "Terry Lee",
       "title": "Junior Programmer (Software Developer) @ Hong Kong Hospital Authority",
-      "bio": "Hey there, I’m Terry. I’m a Computer Science grad from the University of Surrey, now a Junior Programmer at the Hong Kong Hospital Authority..."
+      "bio": "I’m a Computer Science grad from the University of Surrey, now a Junior Programmer at the Hong Kong Hospital Authority. I work with ERP systems, make web pages behave, and fix things when they break. I’ve dabbled in full-stack dev and software engineering, and I’m all about fresh ideas and solving problems without breaking too much along the way."
     },
     "experience": [
       {
@@ -15,7 +15,31 @@
           "Ensured smooth functioning of web pages and features",
           "Guided users through migrations from SharePoint to new system",
           "Collaborated with team members on system improvements",
-          "Utilized ASP, HTML, JS for development tasks"
+          "Utilized ASP and .NET programming languages for development tasks",
+          "Developed a new enquiry form collecting users’ enquiries and saving them to a database"
+        ]
+      },
+      {
+        "role": "Fullstack Developer Intern",
+        "company": "Miracle Paper Craft",
+        "period": "September 2019 - August 2020 (1 year)",
+        "details": [
+          "Handled API integration and rebuilt logic after fetching, leading to a 10% faster processing time",
+          "Developed and maintained web applications with Node.js",
+          "Optimized front-end components for performance across devices and browsers",
+          "Provided technical support and guidance to colleagues",
+          "Managed Email Services"
+        ]
+      },
+      {
+        "role": "Software Engineer Intern",
+        "company": "Ricowell Development Ltd",
+        "period": "July 2018 - June 2019 (1 year)",
+        "details": [
+          "Created SQL queries and unit tests",
+          "Fixed code, improving algorithm performance by 15%",
+          "Administered Linux (Ubuntu OS)",
+          "Documented user guidance for staff"
         ]
       },
       {
@@ -26,10 +50,39 @@
           "Helped with university open day",
           "Guided and introduced courses to visitors"
         ]
+      },
+      {
+        "role": "Business Owner",
+        "company": "Self-Employed",
+        "period": "November 2022 - March 2023 (5 months)",
+        "details": [
+          "Started and managed a watch-selling business using Instagram and Facebook for marketing",
+          "Created and managed an online store using Shopify",
+          "Developed business strategies and executed social media campaigns"
+        ]
+      },
+      {
+        "role": "Video Editor (Self-Employed)",
+        "company": "Self-Employed",
+        "period": "August 2020 - December 2020 (5 months)",
+        "details": [
+          "Clipped and edited YouTube live streams for a translation channel",
+          "Achieved a peak of 23.4k subscribers through non-profit content",
+          "Added Chinese subtitles for English-speaking videos"
+        ]
       }
-
     ],
+
     "projects": [
+      {
+        "title": "Earth Walker (working on it)",
+        "details": [
+          "A Flutter application designed to inspire users to explore the world around them.",
+          "Encourages real-life map exploration with engaging achievements and medals.",
+          "Integrated features for tracking exploration progress and earning rewards.",
+          "Developed with Flutter and focuses on software development best practices."
+        ]
+      },
       {
         "title": "DocGPT (ReadmeGPT)",
         "details": [
@@ -46,14 +99,53 @@
           "Built with Python and Flask, integrating OpenStreetMap and Nominatim APIs.",
           "Frontend designed with JavaScript, HTML, and CSS."
         ]
+      },
+
+      {
+        "title": "Airbnb Development Project Proposal (Project Management)",
+        "details": [
+          "Collaborative project in a team of 5 to modernize properties near Brighton and Hove waterfront.",
+          "Contributed to financial analysis, scoping, and budgeting.",
+          "Used Microsoft Project for planning, task coordination, and team collaboration.",
+          "Enhanced project feasibility through effective time management and budgeting skills."
+        ]
+      },
+      {
+        "title": "Hangman in Assembly",
+        "details": [
+          "Coursework project written entirely in Assembly Language.",
+          "Showcased low-level programming skills and understanding of system architecture.",
+          "Developed a functional Hangman game as part of University coursework."
+        ]
+      },
+      {
+        "title": "Quiz App for Computer Science Students",
+        "details": [
+          "Worked in a group of 5 to create a full-stack quiz application for computer science students.",
+          "Used Node.js, HTML, and CSS, following the Waterfall methodology for development.",
+          "Integrated with a quiz API for dynamic question retrieval and user engagement.",
+          "Added account creation and ranking systems to track scores and encourage competition."
+        ]
+      },
+      {
+        "title": "Skin Cancer Detection and Classification",
+        "details": [
+          "Collaborated in a team of 3 to create a machine learning system for detecting skin cancer.",
+          "Used the Ham10000 dataset, applying data preprocessing and augmentation techniques.",
+          "Experimented with models like VGG16_bn, ResNet18, and fine-tuned ResNet18.",
+          "Integrated BYOL for unsupervised learning to enhance performance with unlabeled data."
+        ]
       }
     ],
     "certifications": [
       "Generative AI: Introduction and Applications",
+      "Google AI Essentials",
+      "Python for Data Science, AI & Development",
       "Generative AI: Prompt Engineering Basics",
       "Introduction to Software Engineering",
       "Introduction to Artificial Intelligence (AI)"
     ],
+
     "fun_fact": "I'm a big FPS fan, with over 4,000 hours spent on Overwatch, Apex Legends, and Rainbow Six Siege combined! I also love cats and dogs if you can't tell."
   }
   
