@@ -1,9 +1,9 @@
+#app.py
 from flask import Flask, render_template, request, redirect, url_for, flash
 import json
 import os
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'  # For flash messages, etc.
 
 DATA_FILE = 'data.json'
 
