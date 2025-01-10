@@ -2,7 +2,7 @@
 {% block content %}
 
 <!-- About Section -->
-<section class="section" id="about">
+<section class="first-section" id="about">
   <h2>About Me</h2>
   <img
     src="{{ url_for('static', filename='img/terry_icon.png') }}"
@@ -44,7 +44,7 @@
 <!-- Certifications -->
 <section class="section" id="certifications">
   <h2>Certifications</h2>
-  <ul class="cert-list">
+  <ul class="list">
     {% for cert in data.certifications %}
       <li>{{ cert }}</li>
     {% endfor %}
@@ -56,7 +56,11 @@
 <section class="section" id="fun-fact">
   <h2>Fun Fact</h2>
   <blockquote>
-    {{ data.fun_fact }}
+    <ul class="list">
+      {% for ffact in data.fun_fact %}
+        {{ ffact }}<br>
+      {% endfor %}
+    </ul>
   </blockquote>
 </section>
 
@@ -78,5 +82,8 @@
     </p>
   </div>
 </section>
+
+<!-- Blank Footer -->
+<footer style="height: 3rem;"></footer>
 
 {% endblock %}

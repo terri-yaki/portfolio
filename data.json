@@ -146,6 +146,9 @@
       "Introduction to Artificial Intelligence (AI)"
     ],
 
-    "fun_fact": "I'm a big FPS fan, with over 4,000 hours spent on Overwatch, Apex Legends, and Rainbow Six Siege combined! I also love cats and dogs if you can't tell."
+    "fun_fact": [
+      "I'm a big FPS fan, with over 4,000 hours spent on Overwatch, Apex Legends, and Rainbow Six Siege combined!",
+      "I also love cats and dogs if you can't tell."
+    ]
   }
   
