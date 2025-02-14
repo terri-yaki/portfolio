@@ -219,7 +219,7 @@ header {
 
 /* Experience items */
 .experience-item {
-  background: #fafafa;
+  background: #F5F5F5;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 8px;
@@ -234,7 +234,7 @@ header {
 
 /* Project items */
 .project-item {
-  background: #fafafa;
+  background: #F5F5F5;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 8px;
