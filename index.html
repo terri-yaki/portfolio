@@ -95,7 +95,7 @@
   <section class="section" id="about">
     <h2>About Me</h2>
     <img
-      src="\portfolio\asset\img\terry_icon.png"
+      src="\asset\img\terry_icon.png"
       alt="Terry's Portrait"
       class="portrait"
     />
@@ -298,6 +298,11 @@
     const themeToggle = document.getElementById('themeToggle');
     const toTopBtn = document.getElementById('toTop');
     const header = document.getElementById('header');
+
+    // redirect portfolio to index
+    if (window.location.hostname === "terri-yaki.github.io") {
+      window.location.href = "https://terriyaki.cc";
+    }
 
     // Loader
     window.addEventListener('load', () => {
