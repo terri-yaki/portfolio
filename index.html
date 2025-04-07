@@ -12,61 +12,67 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Terry - Portfolio</title>
+  <title>Terry | Software Developer</title>
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Material Icons -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
-<body>
+<body class="dark-mode">
   <!-- Loader -->
   <div id="loader">
-    <div class="spinner"></div>
+    <div class="terminal-loader">
+      <div class="terminal-header">
+        <span class="terminal-button"></span>
+        <span class="terminal-button"></span>
+        <span class="terminal-button"></span>
+      </div>
+      <div class="terminal-content">
+        <div class="typing-text">Loading portfolio...</div>
+      </div>
+    </div>
   </div>
 
   <!-- Header / Navbar -->
   <header id="header">
-    <!-- Left: Logo & Hamburger Menu -->
     <div class="header-left">
       <button class="menu-toggle" id="menuToggle">
         <span class="material-icons">menu</span>
       </button>
-      <!--<div class="logo">Terry Lee</div>-->
+      <div class="logo">
+        <span class="logo-bracket">{</span>
+        <span class="logo-name">Terry Lee</span>
+        <span class="logo-bracket">}</span>
+      </div>
     </div>
 
-    <!-- Center: Desktop Nav links (hidden on mobile) -->
     <div class="header-center">
       <nav class="nav-links desktop-nav">
-        <a href="#about">
-          <span class="material-icons">face</span>About
+        <a href="#about" class="nav-link">
+          <span class="material-icons">code</span>About
         </a>
-        <a href="#experience">
-          <span class="material-icons">work</span>Experience
+        <a href="#experience" class="nav-link">
+          <span class="material-icons">terminal</span>Experience
         </a>
-        <a href="#projects">
-          <span class="material-icons">build_circle</span>Projects
+        <a href="#projects" class="nav-link">
+          <span class="material-icons">integration_instructions</span>Projects
         </a>
-        <a href="#certifications">
+        <a href="#certifications" class="nav-link">
           <span class="material-icons">verified</span>Certifications
         </a>
-        <a href="#contact">
-          <span class="material-icons">contacts</span>Contact
+        <a href="#contact" class="nav-link">
+          <span class="material-icons">alternate_email</span>Contact
         </a>
       </nav>
     </div>
 
-    <!-- Right: Theme Toggle -->
     <div class="header-right">
       <button class="theme-toggle" id="themeToggle">
         <span class="material-icons">dark_mode</span>
@@ -75,233 +81,419 @@
   </header>
 
   <!-- MOBILE SLIDE-OUT NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <span class="material-icons close-btn" id="closeBtn">close</span>
+      <div class="logo">
+        <span class="logo-bracket">{</span>
+        <span class="logo-name">TL</span>
+        <span class="logo-bracket">}</span>
+      </div>
+    </div>
+    <nav class="nav-links mobile-nav-links">
+      <a href="#about" class="nav-link">
+        <span class="material-icons">code</span>About
+      </a>
+      <a href="#experience" class="nav-link">
+        <span class="material-icons">terminal</span>Experience
+      </a>
+      <a href="#projects" class="nav-link">
+        <span class="material-icons">integration_instructions</span>Projects
+      </a>
+      <a href="#certifications" class="nav-link">
+        <span class="material-icons">verified</span>Certifications
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="material-icons">alternate_email</span>Contact
+      </a>
+    </nav>
+  </div>
 
-    <div class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-header">
-        <span class="material-icons close-btn" id="closeBtn">close</span>
-        <h3>:3</h3>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="comment">/* Hi there, welcome to my portfolio */</div>
+            <h1 class="hero-title">
+              <span class="const">const</span> 
+              <span class="name">developer</span> = 
+              <span class="string">"Terry Lee"</span>;
+            </h1>
+            <div class="hero-subtitle">
+              <span class="line">
+                <span class="keyword">function</span> 
+                <span class="function">createSolutions</span>() {
+              </span>
+              <span class="line indent">
+                <span class="return">return</span> 
+                <span class="string">"Software Developer with a passion for clean code"</span>;
+              </span>
+              <span class="line">}</span>
+            </div>
+            <div class="hero-cta">
+              <a href="#contact" class="cta-button">
+                <span class="material-icons">send</span>
+                Contact Me
+              </a>
+              <a href="#projects" class="cta-button secondary">
+                <span class="material-icons">code</span>
+                View Projects
+              </a>
+            </div>
+          </div>
         </div>
-        <nav class="nav-links mobile-nav-links">
-        <a href="#about">
-            <span class="material-icons">face</span>About
-        </a>
-        <a href="#experience">
-            <span class="material-icons">work</span>Experience
-        </a>
-        <a href="#projects">
-            <span class="material-icons">build_circle</span>Projects
-        </a>
-        <a href="#certifications">
-            <span class="material-icons">verified</span>Certifications
-        </a>
-        <a href="#contact">
-            <span class="material-icons">contacts</span>Contact
-        </a>
-        </nav>
-    </div>
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <img
-      src="\asset\img\terry_icon_2.png"
-      alt="Terry's Portrait"
-      class="portrait"
-    />
-    <h3>Terry Lee</h3>
-    <p>Software Developer</p>
-    <p>
-        Hey there, I’m Terry.<br>
-        I’m a Computer Science graduate from the University of Surrey, was a Junior Software Engineer at the Hong Kong Hospital Authority.
-        I worked with internal systems, make softwares, and fixed things when they break. New side projects will be born when I'm bored.
-        I’ve dabbled in full-stack dev and software engineering, and I’m all about fresh ideas and solving problems without breaking too much along the way.
-    </p>
-  </section>
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About<span class="dot">.</span>me()</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="\asset\img\terry_icon_2.png" alt="Terry's Portrait" class="portrait" />
+          </div>
+          <div class="about-text">
+            <div class="terminal">
+              <div class="terminal-header">
+                <span class="terminal-button"></span>
+                <span class="terminal-button"></span>
+                <span class="terminal-button"></span>
+                <span class="terminal-title">terry@portfolio: ~/about</span>
+              </div>
+              <div class="terminal-content">
+                <p class="terminal-line">
+                  <span class="prompt">$</span> 
+                  <span class="command">whoami</span>
+                </p>
+                <p class="terminal-output">
+                  Hey there, I'm Terry. I'm a Computer Science graduate from the University of Surrey, was a Junior Software Engineer at the Hong Kong Hospital Authority.
+                </p>
+                <p class="terminal-line">
+                  <span class="prompt">$</span> 
+                  <span class="command">cat skills.txt</span>
+                </p>
+                <p class="terminal-output">
+                  I worked with internal systems, make softwares, and fixed things when they break. New side projects will be born when I'm bored.
+                  I've dabbled in full-stack dev and software engineering, and I'm all about fresh ideas and solving problems without breaking too much along the way.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Experience Section -->
-<section class="section" id="experience">
-  <h2>Experience</h2>
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience<span class="dot">.</span>map()</h2>
+        </div>
+        <div class="timeline">
+          <div class="experience-item">
+            <div class="experience-date">
+              <span class="date-range">Mar 2024 - Mar 2025</span>
+            </div>
+            <div class="experience-content">
+              <h3 class="experience-title">Junior Software Developer</h3>
+              <div class="experience-company">Hong Kong Hospital Authority</div>
+              <ul class="experience-details">
+                <li>Developed and optimized internal web applications using ASP and JavaScript</li>
+                <li>Integrated the internal system with Jira, streamlining data tracking and improving issue resolution</li>
+                <li>Designed and implemented a new enquiry form that improved data collection and user experience</li>
+                <li>Conducted code scanning and performance optimization, ensuring secure and efficient system updates</li>
+                <li>Led comprehensive testing and documentation efforts, ensuring seamless deployment and increased user adoption</li>
+              </ul>
+            </div>
+          </div>
 
-  <div class="experience-item">
-    <h3>Junior Software Developer</h3>
-    <span>Hong Kong Hospital Authority</span> |
-    <span>March 2024 - March 2025</span><br><br>
-    <p>• Developed and optimized internal web applications using ASP and JavaScript</p>
-    <p>• Integrated the internal system with Jira, streamlining data tracking and improving issue resolution</p>
-    <p>• Designed and implemented a new enquiry form that improved data collection and user experience</p>
-    <p>• Conducted code scanning and performance optimization, ensuring secure and efficient system updates</p>
-    <p>• Led comprehensive testing and documentation efforts, ensuring seamless deployment and increased user adoption</p>
-  </div>
+          <div class="experience-item">
+            <div class="experience-date">
+              <span class="date-range">Sep 2019 - Aug 2020</span>
+            </div>
+            <div class="experience-content">
+              <h3 class="experience-title">Fullstack Developer Intern</h3>
+              <div class="experience-company">Ricowell Development Ltd</div>
+              <ul class="experience-details">
+                <li>Handled API integration and rebuilt logic, leading to a 10% faster processing time</li>
+                <li>Developed and maintained web applications with React.js, Node.js, Tailwind CSS, and MSSQL Server</li>
+                <li>Optimized front-end components for performance across devices and browsers using techniques like pre-fetching and lazy loading</li>
+                <li>Provided technical support and guidance to colleagues</li>
+              </ul>
+            </div>
+          </div>
 
-  <div class="experience-item">
-    <h3>Fullstack Developer Intern</h3>
-    <span>Ricowell Development Ltd</span> | 
-    <span>September 2019 - August 2020</span><br><br>
-    <p>• Handled API integration and rebuilt logic, leading to a 10% faster processing time</p>
-    <p>• Developed and maintained web applications with React.js, Node.js, Tailwind CSS, and MSSQL Server</p>
-    <p>• Optimized front-end components for performance across devices and browsers using techniques like pre-fetching and lazy loading</p>
-    <p>• Provided technical support and guidance to colleagues</p>
-  </div>
+          <div class="experience-item">
+            <div class="experience-date">
+              <span class="date-range">Jul 2018 - Jun 2019</span>
+            </div>
+            <div class="experience-content">
+              <h3 class="experience-title">Software Engineer Intern</h3>
+              <div class="experience-company">Miracle Paper Craft Ltd</div>
+              <ul class="experience-details">
+                <li>Worked on small features, bug fixes, and improvements in existing applications</li>
+                <li>Created SQL queries and unit tests with C and Java</li>
+                <li>Improved code logic, leading to a 15% increase in algorithm efficiency</li>
+                <li>Administered Linux (Ubuntu OS)</li>
+                <li>Documented user guidance for staff</li>
+              </ul>
+            </div>
+          </div>
 
-  <div class="experience-item">
-    <h3>Software Engineer Intern</h3>
-    <span>Miracle Paper Craft Ltd</span> | 
-    <span>July 2018 - June 2019</span><br><br>
-    <p>• Worked on small features, bug fixes, and improvements in existing applications</p>
-    <p>• Created SQL queries and unit tests with C and Java</p>
-    <p>• Improved code logic, leading to a 15% increase in algorithm efficiency</p>
-    <p>• Administered Linux (Ubuntu OS)</p>
-    <p>• Documented user guidance for staff</p>
-  </div>
+          <div class="experience-item">
+            <div class="experience-date">
+              <span class="date-range">Oct 2022 - Jun 2023</span>
+            </div>
+            <div class="experience-content">
+              <h3 class="experience-title">Event Assistant</h3>
+              <div class="experience-company">University of Surrey</div>
+              <ul class="experience-details">
+                <li>Assisted with university open days</li>
+                <li>Guided and introduced courses to visitors</li>
+              </ul>
+            </div>
+          </div>
 
-  <div class="experience-item">
-    <h3>Event Assistant</h3>
-    <span>University of Surrey</span> |
-    <span>October 2022 - June 2023</span><br><br>
-    <p>• Assisted with university open days</p>
-    <p>• Guided and introduced courses to visitors</p>
-  </div>
+          <div class="experience-item">
+            <div class="experience-date">
+              <span class="date-range">Nov 2022 - Mar 2023</span>
+            </div>
+            <div class="experience-content">
+              <h3 class="experience-title">Business Owner</h3>
+              <ul class="experience-details">
+                <li>Ran a watch-selling business through Instagram and Facebook ads</li>
+                <li>Managed a Shopify store for e-commerce operations</li>
+              </ul>
+            </div>
+          </div>
 
-  <div class="experience-item">
-    <h3>Business Owner</h3>
-    <span>November 2022 - March 2023</span><br><br>
-    <p>• Ran a watch-selling business through Instagram and Facebook ads</p>
-    <p>• Managed a Shopify store for e-commerce operations</p>
-  </div>
+          <div class="experience-item">
+            <div class="experience-date">
+              <span class="date-range">Aug 2020 - Dec 2020</span>
+            </div>
+            <div class="experience-content">
+              <h3 class="experience-title">Video Editor (Self-employed)</h3>
+              <ul class="experience-details">
+                <li>Clipped YouTube live streams and edited them for a translation channel</li>
+                <li>Grew the channel to a peak of 23.4k subscribers (non-profit content)</li>
+                <li>Added Chinese subtitles for English-speaking videos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="experience-item">
-    <h3>Video Editor (Self-employed)</h3>
-    <span>August 2020 - December 2020</span><br><br>
-    <p>• Clipped YouTube live streams and edited them for a translation channel</p>
-    <p>• Grew the channel to a peak of 23.4k subscribers (non-profit content)</p>
-    <p>• Added Chinese subtitles for English-speaking videos</p>
-  </div>
-</section>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projects<span class="dot">.</span>forEach()</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">TechScroll – IT Knowledge Threads</h3>
+              <div class="project-links">
+                <span class="project-tag">React Native</span>
+                <span class="project-tag">Supabase</span>
+                <span class="project-tag">Python</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul class="project-details">
+                <li>Built a React Native mobile app that delivers IT-related microlearning content</li>
+                <li>Implemented infinite scrolling, Markdown support, content saving, and sharing features</li>
+                <li>Implemented Supabase as a scalable backend solution, enabling real-time content management and secure user authentication</li>
+                <li>Automated content fetching using a Python script with DeepSeek API for topic generation</li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">OOTD Generator</h3>
+              <div class="project-links">
+                <a href="https://github.com/terri-yaki/ootd-generator" target="_blank" class="project-link">
+                  <span class="material-icons">code</span>
+                </a>
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Hive</span>
+                <span class="project-tag">Cross-platform</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul class="project-details">
+                <li>Developed a cross-platform Flutter app that generates random outfits from user's wardrobe</li>
+                <li>Implemented core functionalities including adding, editing, and deleting clothing items (with photo, name, tags, and category)</li>
+                <li>Integrated smooth swipe animations for dismissing and reloading outfit displays</li>
+                <li>Utilized Hive for local data persistence to ensure wardrobe data remains saved across sessions</li>
+                <li>Deployed on Android, iOS and Desktop</li>
+              </ul>
+            </div>
+          </div>
 
-  <!-- Projects Section -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">DocGPT (ReadmeGPT)</h3>
+              <div class="project-links">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">OpenAI API</span>
+                <span class="project-tag">CLI</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul class="project-details">
+                <li>Python-based CLI application using OpenAI API</li>
+                <li>Automatically generates README.md files for undocumented GitHub repositories</li>
+                <li>Scans repositories to create comprehensive documentation for developers</li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="project-item">
-      <h3>TechScroll – IT Knowledge Threads</a></h3><br>
-      <p>• Built a React Native mobile app that delivers IT-related microlearning content.</p>
-      <p>• Implemented infinite scrolling, Markdown support, content saving, and sharing features.</p>
-      <p>• Implemented Supabase as a scalable backend solution, enabling real-time content management and secure user authentication.</p>
-      <p>• Automated content fetching using a Python script with DeepSeek API for topic generation.</p>
-    </div>    
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Adaptive Route Planner</h3>
+              <div class="project-links">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">OpenStreetMap</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul class="project-details">
+                <li>Developed an adaptive route planner web application</li>
+                <li>Real-time route planning based on user preferences</li>
+                <li>Built with Python and Flask, integrating OpenStreetMap and Nominatim APIs</li>
+                <li>Frontend designed with JavaScript, HTML, and CSS</li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="project-item">
-      <h3><a href="https://github.com/terri-yaki/ootd-generator" target="_blank">OOTD (outfit of the day) Generator</h3></a><br>
-      <p>• Developed a cross-platform Flutter app that generates random outfits from user’s wardrobe.</p>
-      <p>• Implemented core functionalities including adding, editing, and deleting clothing items (with photo, name, tags,
-        and category), and generating outfits in a fixed order (Top, Bottom, Footwear, and Accessory).</p>
-      <p>• Integrated smooth swipe animations for dismissing and reloading outfit displays.</p>
-      <p>• Utilized Hive for local data persistence to ensure wardrobe data remains saved across sessions.</p>
-      <p>• Deployed on Android, iOS and Desktop.</p>
-    </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Airbnb Development Project Proposal</h3>
+              <div class="project-links">
+                <span class="project-tag">Project Management</span>
+                <span class="project-tag">MS Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul class="project-details">
+                <li>Collaborative project in a team of 5</li>
+                <li>Developed a proposal to modernize properties near Brighton and Hove waterfront</li>
+                <li>Contributed to financial analysis, scoping, and budgeting using Microsoft Project</li>
+              </ul>
+            </div>
+          </div>
 
-    <!-- DocGPT (ReadmeGPT) -->
-    <div class="project-item">
-      <h3>DocGPT (ReadmeGPT)</h3><br>
-      <p>• Python-based CLI application using OpenAI API.</p>
-      <p>• Automatically generates README.md files for undocumented GitHub repositories.</p>
-      <p>• Scans repositories to create comprehensive documentation for developers.</p>
-    </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Hangman in Assembly</h3>
+              <div class="project-links">
+                <span class="project-tag">Assembly</span>
+                <span class="project-tag">Low-level</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <ul class="project-details">
+                <li>Built a Hangman game entirely in Assembly language</li>
+                <li>Coursework project showcasing low-level programming skills</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Adaptive Route Planner -->
-    <div class="project-item">
-      <h3>Adaptive Route Planner (Final Year Project)</h3><br>
-      <p>• Developed an adaptive route planner web application.</p>
-      <p>• Real-time route planning based on user preferences.</p>
-      <p>• Built with Python and Flask, integrating OpenStreetMap and Nominatim APIs.</p>
-      <p>• Frontend designed with JavaScript, HTML, and CSS.</p>
-    </div>
+    <!-- Certifications -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certifications<span class="dot">.</span>verify()</h2>
+        </div>
+        <div class="certifications-container">
+          <div class="certification-card">
+            <div class="certification-icon">
+              <span class="material-icons">verified</span>
+            </div>
+            <div class="certification-content">
+              <h3 class="certification-title">IBM AI Developer</h3>
+              <p class="certification-issuer">IBM</p>
+              <a href="https://www.coursera.org/account/accomplishments/professional-cert/PG5JZ16N6ML7" target="_blank" class="certification-link">
+                View Certificate <span class="material-icons">open_in_new</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Airbnb Development Project Proposal -->
-    <div class="project-item">
-      <h3>Airbnb Development Project Proposal (Project Management)</h3><br>
-      <p>• Collaborative project in a team of 5.</p>
-      <p>• Developed a proposal to modernize properties near Brighton and Hove waterfront.</p>
-      <p>• Contributed to financial analysis, scoping, and budgeting using Microsoft Project.</p>
-    </div>
+    <!-- Fun Fact -->
+    <section class="section" id="fun-fact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">FunFact<span class="dot">.</span>random()</h2>
+        </div>
+        <div class="fun-fact-container">
+          <div class="code-snippet">
+            <pre><code><span class="comment">// A glimpse into my life outside coding</span>
+<span class="keyword">const</span> <span class="variable">hobbies</span> = {
+  <span class="key">gaming</span>: {
+    <span class="key">fps</span>: [<span class="string">'Overwatch'</span>, <span class="string">'Apex Legends'</span>, <span class="string">'Rainbow Six Siege'</span>],
+    <span class="key">totalHours</span>: <span class="number">4000</span>+
+  },
+  <span class="key">pets</span>: <span class="string">'Love both cats and dogs!'</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Hangman in Assembly -->
-    <div class="project-item">
-      <h3>Hangman in Assembly</h3><br>
-      <p>• Built a Hangman game entirely in Assembly language.</p>
-      <p>• Coursework project showcasing low-level programming skills.</p>
-    </div>
-
-    <!-- Quiz App for Computer Science Students -->
-    <div class="project-item">
-      <h3>Quiz App for Computer Science Students</h3><br>
-      <p>• Group project to create a quiz application for CS students.</p>
-      <p>• Full-stack development with Node.js, React, HTML, and CSS.</p>
-      <p>• Integrated a quiz API for dynamic questions and added a ranking system.</p>
-    </div>
-
-    <!-- Skin Cancer Detection and Classification -->
-    <div class="project-item">
-      <h3>Skin Cancer Detection and Classification</h3><br>
-      <p>• Created a skin cancer detection system using the Ham10000 dataset.</p>
-      <p>• Experimented with models like VGG16_bn and ResNet18, integrating BYOL.</p>
-      <p>• Focused on data processing, augmentation, and model tuning for enhanced performance.</p>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section class="section" id="certifications">
-    <h2>Certifications</h2>
-    <ul class="cert-list">
-      <li>
-        <a href="https://www.coursera.org/account/accomplishments/professional-cert/PG5JZ16N6ML7" target="_blank">
-          IBM AI Developer by IBM
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Fun Fact -->
-  <section class="section" id="fun-fact">
-    <h2>Fun Fact</h2>
-    <blockquote>
-      I'm a big FPS fan, with over 4,000 hours spent on Overwatch, Apex Legends,
-      and Rainbow Six Siege combined!<br>
-      I also love cats and dogs if you can't tell.
-    </blockquote>
-  </section>
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p>
-        <span class="material-icons">mail</span>
-        <a href="mailto:hoyulee@yahoo.com.hk">hoyulee@yahoo.com.hk</a>
-      </p>
-      <p>
-        <span class="material-icons">link</span>
-        <a href="https://linkedin.com/in/terrylhyyy" target="_blank">LinkedIn</a>
-      </p>
-      <p>
-        <span class="material-icons">code</span>
-        <a href="https://github.com/terri-yaki" target="_blank">GitHub</a>
-      </p>
-    </div>
-  </section>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact<span class="dot">.</span>connect()</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-card">
+            <a href="/cdn-cgi/l/email-protection#3b535449445753545e7b4c5a535454155854561553504b" class="contact-item">
+              <span class="material-icons">mail</span>
+              <span class="contact-text"><span class="__cf_email__" data-cfemail="c8a0a7bab7a4a0a7ad88bfa9a0a7a7e6aba7a5e6a0a3b8">[email&#160;protected]</span></span>
+            </a>
+            <a href="https://linkedin.com/in/terrylhyyy" target="_blank" class="contact-item">
+              <span class="material-icons">link</span>
+              <span class="contact-text">LinkedIn</span>
+            </a>
+            <a href="https://github.com/terri-yaki" target="_blank" class="contact-item">
+              <span class="material-icons">code</span>
+              <span class="contact-text">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Go to top button -->
   <button id="toTop">
     <span class="material-icons">keyboard_arrow_up</span>
   </button>
 
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script>
     const loader = document.getElementById('loader');
     const body = document.body;
     const themeToggle = document.getElementById('themeToggle');
     const toTopBtn = document.getElementById('toTop');
     const header = document.getElementById('header');
+    const themeIcon = themeToggle.querySelector('.material-icons');
 
     // redirect portfolio to index
     if (window.location.hostname === "terri-yaki.github.io") {
@@ -312,14 +504,17 @@
     window.addEventListener('load', () => {
       setTimeout(() => {
         loader.classList.add('hidden');
-      }, 500);
+      }, 1500);
     });
 
     // Dark/Light Mode Toggle
     themeToggle.addEventListener('click', () => {
       body.classList.toggle('dark-mode');
-      header.classList.toggle('dark-mode');
-      loader.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        themeIcon.textContent = 'light_mode';
+      } else {
+        themeIcon.textContent = 'dark_mode';
+      }
     });
 
     // Go to top button
@@ -329,7 +524,15 @@
       } else {
         toTopBtn.classList.remove('show');
       }
+      
+      // Add shadow to header when scrolling
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     });
+    
     toTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -338,7 +541,6 @@
     const menuToggle = document.getElementById('menuToggle');
     const mobileNav = document.getElementById('mobileNav');
     const closeBtn = document.getElementById('closeBtn');
-
     const navLinks = document.querySelectorAll('.mobile-nav-links a');
 
     // Open mobile nav
@@ -352,10 +554,34 @@
     });
 
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileNav.classList.remove('open');
-        });
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
       });
+    });
+
+    // Highlight active section in navigation
+    const sections = document.querySelectorAll('.section');
+    const navItems = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (scrollY >= (sectionTop - 300)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href').substring(1) === current) {
+          item.classList.add('active');
+        }
+      });
+    });
   </script>
 </body>
 </html>
