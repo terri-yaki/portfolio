@@ -802,18 +802,200 @@ header.scrolled {
 .contact-text {
   font-weight: 500;
 }
-
-/* Footer */
-footer {
-  background: var(--bg-secondary);
-  padding: 2rem 0;
-  text-align: center;
-  border-top: 1px solid var(--border-color);
+/* Business Section Styles */
+.business-container {
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
 }
 
-.footer-text {
+.business-header {
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.business-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.terabase-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.business-title h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.business-content {
+  padding: 2rem;
+}
+
+.business-description {
+  margin-bottom: 3rem;
+}
+
+.business-services {
+  margin-bottom: 3rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .material-icons {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.service-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.business-cta {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.business-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.business-cta p {
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.business-contact {
+  margin-bottom: 3rem;
+}
+
+.business-contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+}
+
+.contact-method .material-icons {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.contact-method h4 {
+  margin-bottom: 0.5rem;
+}
+
+.testimonials h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  color: var(--accent-color);
+  opacity: 0.2;
+  font-size: 2rem;
+}
+
+.quote .material-icons {
+  font-size: 2.5rem;
+}
+
+.testimonial-card p {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
   color: var(--text-secondary);
-  font-family: 'Fira Code', monospace;
+}
+
+/* Responsive adjustments for business section */
+@media (max-width: 768px) {
+  .business-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .cta-button {
+    width: 100%;
+  }
 }
 
 /* Go to top button */
