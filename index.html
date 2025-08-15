@@ -220,6 +220,7 @@
                 <li>Enhanced referral letter generation according to users request</li>
               </ul>
             </div>
+          </div>
 
           <div class="experience-item">
             <div class="experience-date">
@@ -741,7 +742,6 @@
       
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         
         if (scrollY >= (sectionTop - 300)) {
           current = section.getAttribute('id');
