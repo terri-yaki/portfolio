@@ -11,750 +11,332 @@
     gtag('config', 'G-Y7R1CQD3NV');
   </script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Terry | Software Developer</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Material Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <!-- External CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Terry Lee — Software Developer</title>
+  <meta name="description" content="Terry Lee, software developer in Hong Kong. An index of experience, projects, and ways to get in touch." />
+  <!-- Fonts: Newsreader (display) · IBM Plex Sans (body) · JetBrains Mono (outlier) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@350;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
-<body class="dark-mode">
-  <!-- Loader -->
-  <div id="loader">
-    <div class="terminal-loader">
-      <div class="terminal-header">
-        <span class="terminal-button"></span>
-        <span class="terminal-button"></span>
-        <span class="terminal-button"></span>
-      </div>
-      <div class="terminal-content">
-        <div class="typing-text">Loading portfolio...</div>
-      </div>
-    </div>
-  </div>
+<body>
 
-  <!-- Header / Navbar -->
-  <header id="header">
-    <div class="header-left">
-      <button class="menu-toggle" id="menuToggle">
-        <span class="material-icons">menu</span>
-      </button>
-      <div class="logo">
-        <span class="logo-bracket">{</span>
-        <span class="logo-name">Terry</span>
-        <span class="logo-bracket">}</span>
-      </div>
-    </div>
-
-    <div class="header-center">
-      <nav class="nav-links desktop-nav">
-        <a href="#about" class="nav-link">
-          <span class="material-icons">code</span>About
-        </a>
-        <a href="#experience" class="nav-link">
-          <span class="material-icons">terminal</span>Experience
-        </a>
-        <a href="#projects" class="nav-link">
-          <span class="material-icons">integration_instructions</span>Projects
-        </a>
-        <a href="#business" class="nav-link">
-          <span class="material-icons">business</span>Terabase
-        </a>
-        <a href="#certifications" class="nav-link">
-          <span class="material-icons">verified</span>Certifications
-        </a>
-        <a href="#contact" class="nav-link">
-          <span class="material-icons">alternate_email</span>Contact
-        </a>
-      </nav>
-    </div>
-
-    <div class="header-right">
-      <button class="theme-toggle" id="themeToggle">
-        <span class="material-icons">dark_mode</span>
-      </button>
-    </div>
+  <!-- N9 · edge-aligned minimal: wordmark hard-left, single control hard-right -->
+  <header class="site-nav">
+    <a class="wordmark" href="#top">Terry&nbsp;lee</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">Dark</button>
   </header>
 
-  <!-- MOBILE SLIDE-OUT NAV -->
-  <div class="mobile-nav" id="mobileNav">
-    <div class="mobile-nav-header">
-      <span class="material-icons close-btn" id="closeBtn">close</span>
-      <div class="logo">
-        <span class="logo-bracket">{</span>
-        <span class="logo-name">TL</span>
-        <span class="logo-bracket">}</span>
-      </div>
-    </div>
-    <nav class="nav-links mobile-nav-links">
-      <a href="#about" class="nav-link">
-        <span class="material-icons">code</span>About
-      </a>
-      <a href="#experience" class="nav-link">
-        <span class="material-icons">terminal</span>Experience
-      </a>
-      <a href="#projects" class="nav-link">
-        <span class="material-icons">integration_instructions</span>Projects
-      </a>
-      <a href="#business" class="nav-link">
-        <span class="material-icons">business</span>Terabase
-      </a>
-      <a href="#certifications" class="nav-link">
-        <span class="material-icons">verified</span>Certifications
-      </a>
-      <a href="#contact" class="nav-link">
-        <span class="material-icons">alternate_email</span>Contact
-      </a>
-    </nav>
-  </div>
+  <main class="page" id="top">
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-text">
-            <div class="comment">/* wsg */</div>
-            <h1 class="hero-title">
-              <span class="const">const</span> 
-              <span class="name">developer</span> = 
-              <span class="string">"Terry"</span>;
-            </h1>
-            <h1 class="hero-title">
-              <span class="const">const</span> 
-              <span class="name">alias</span> = 
-              <span class="string">"terriyaki"</span>;
-            </h1>
-            <div class="hero-subtitle">
-              <span class="line">
-                <span class="keyword">function</span> 
-                <span class="function">createSolutions</span>() {
-              </span>
-              <span class="line indent">
-                <span class="return">return</span> 
-                <span class="string">"Software Developer"</span>;
-              </span>
-              <span class="line">}</span>
-            </div>
-            <div class="hero-cta">
-              <a href="#contact" class="cta-button">
-                <span class="material-icons">send</span>
-                Contact Me
-              </a>
-              <a href="#projects" class="cta-button secondary">
-                <span class="material-icons">code</span>
-                View Projects
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Index-First: a paragraph introducing the index, no display type -->
+    <section class="masthead">
+      <h1 class="masthead-title"><span class="role">Software developer</span> working with clinical systems in Hong&nbsp;Kong.</h1>
+      <p class="masthead-lede">
+        Junior Programmer at the Hong Kong Hospital Authority;
+        Computer Science graduate of the University of Surrey.
+        I develop and maintain software, and fix things when they break.
+        New side projects are born when I’m bored.
+        Below: an index of experience, selected
+        projects, a small studio, and ways to reach me.
+      </p>
+      <p class="masthead-meta">HONG KONG · 2024 — PRESENT</p>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">About<span class="dot">.</span>me()</h2>
-        </div>
-        <div class="about-content">
-          <div class="about-image">
-            <img src="\asset\img\terry_icon_2.png" alt="Terry's Portrait" class="portrait" />
-          </div>
-          <div class="about-text">
-            <div class="terminal">
-              <div class="terminal-header">
-                <span class="terminal-button"></span>
-                <span class="terminal-button"></span>
-                <span class="terminal-button"></span>
-                <span class="terminal-title">terry@portfolio: ~/about</span>
-              </div>
-              <div class="terminal-content">
-                <p class="terminal-line">
-                  <span class="prompt">$</span> 
-                  <span class="command">whoami</span>
-                </p>
-                <p class="terminal-output">
-                  Hey there, I'm Terry. Junior Programmer at Hong Kong Hospital Authority; Computer Science graduate from the University of Surrey.
-                </p>
-                <p class="terminal-line">
-                  <span class="prompt">$</span> 
-                  <span class="command">cat skills.txt</span>
-                </p>
-                <p class="terminal-output">
-                  I work with clinical systems, develope and maintain softwares, and fixed things when they break. New side projects will be born when I'm bored (if I'm free).
-                  I've dabbled in full-stack dev and software engineering.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Experience -->
+    <section class="index-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-head">
+        <h2 class="section-title" id="experience-title">Experience</h2>
+        <span class="section-note">6 ROLES</span>
       </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <span class="row-date">MAY 2025 — NOW</span>
+          <div>
+            <h3 class="row-title">Junior Programmer</h3>
+            <p class="row-org">Hong Kong Hospital Authority</p>
+            <ul class="row-details">
+              <li>Maintaining the eHR system and CMS On-Ramp.</li>
+              <li>Maintaining the Adaptation Modules System for Health Institutes.</li>
+              <li>Testing, development, and enhancement on eHR applications.</li>
+              <li>Working on the Local Adaptation Module (LAAM) project, a system for data uploading.</li>
+              <li>Cloud migration initiatives for eHR systems.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">MAR 2024 — MAR 2025</span>
+          <div>
+            <h3 class="row-title">Junior Software Developer</h3>
+            <p class="row-org">Hong Kong Hospital Authority</p>
+            <ul class="row-details">
+              <li>Developed and optimized internal web applications using ASP and JavaScript.</li>
+              <li>Integrated the internal system with Jira, streamlining data tracking and issue resolution.</li>
+              <li>Designed and implemented a new enquiry form that improved data collection.</li>
+              <li>Conducted code scanning and performance optimization for secure, efficient updates.</li>
+              <li>Led testing and documentation efforts for seamless deployment.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">OCT 2022 — JUN 2023</span>
+          <div>
+            <h3 class="row-title">Event Assistant</h3>
+            <p class="row-org">University of Surrey</p>
+            <ul class="row-details">
+              <li>Assisted with university open days; guided and introduced courses to visitors.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">NOV 2022 — MAR 2023</span>
+          <div>
+            <h3 class="row-title">Business Owner</h3>
+            <p class="row-org">Self-employed</p>
+            <ul class="row-details">
+              <li>Ran a watch-selling business through Instagram and Facebook ads.</li>
+              <li>Managed a Shopify store for e-commerce operations.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">AUG 2020 — DEC 2020</span>
+          <div>
+            <h3 class="row-title">Video Editor</h3>
+            <p class="row-org">Self-employed</p>
+            <ul class="row-details">
+              <li>Clipped YouTube live streams and edited them for a translation channel.</li>
+              <li>Grew the channel to a peak of 23.4k subscribers (non-profit content).</li>
+              <li>Added Chinese subtitles for English-speaking videos.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">SEP 2019 — AUG 2020</span>
+          <div>
+            <h3 class="row-title">Fullstack Developer Intern</h3>
+            <p class="row-org">Ricowell Development Ltd</p>
+            <ul class="row-details">
+              <li>Handled API integration and rebuilt logic, leading to a 10% faster processing time.</li>
+              <li>Built web applications with React.js, Node.js, Tailwind CSS, and MSSQL Server.</li>
+              <li>Optimized front-end components with pre-fetching and lazy loading.</li>
+              <li>Provided technical support and guidance to colleagues.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">JUL 2018 — JUN 2019</span>
+          <div>
+            <h3 class="row-title">Software Engineer Intern</h3>
+            <p class="row-org">Miracle Paper Craft Ltd</p>
+            <ul class="row-details">
+              <li>Worked on small features, bug fixes, and improvements in existing applications.</li>
+              <li>Created SQL queries and unit tests with C and Java.</li>
+              <li>Improved code logic, leading to a 15% increase in algorithm efficiency.</li>
+              <li>Administered Linux (Ubuntu) and documented user guidance for staff.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Experience<span class="dot">.</span>map()</h2>
-        </div>
-        <div class="timeline">
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">May 2025 - Present</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Junior Programmer</h3>
-              <div class="experience-company">Hong Kong Hospital Authority</div>
-              <ul class="experience-details">
-                <li>Maintain eHR system and CMS On-Ramp.</li>
-                <li>Maintain Adaptation Modules System for Health Institutes.</li>
-                <li>Perform testing, development and enhancement on eHR applications.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">Mar 2024 - Mar 2025</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Junior Software Developer</h3>
-              <div class="experience-company">Hong Kong Hospital Authority</div>
-              <ul class="experience-details">
-                <li>Developed and optimized internal web applications using ASP and JavaScript</li>
-                <li>Integrated the internal system with Jira, streamlining data tracking and improving issue resolution</li>
-                <li>Designed and implemented a new enquiry form that improved data collection and user experience</li>
-                <li>Conducted code scanning and performance optimization, ensuring secure and efficient system updates</li>
-                <li>Led comprehensive testing and documentation efforts, ensuring seamless deployment and increased user adoption</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">Oct 2022 - Jun 2023</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Event Assistant</h3>
-              <div class="experience-company">University of Surrey</div>
-              <ul class="experience-details">
-                <li>Assisted with university open days</li>
-                <li>Guided and introduced courses to visitors</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">Nov 2022 - Mar 2023</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Business Owner</h3>
-              <ul class="experience-details">
-                <li>Ran a watch-selling business through Instagram and Facebook ads</li>
-                <li>Managed a Shopify store for e-commerce operations</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">Aug 2020 - Dec 2020</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Video Editor (Self-employed)</h3>
-              <ul class="experience-details">
-                <li>Clipped YouTube live streams and edited them for a translation channel</li>
-                <li>Grew the channel to a peak of 23.4k subscribers (non-profit content)</li>
-                <li>Added Chinese subtitles for English-speaking videos</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">Sep 2019 - Aug 2020</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Fullstack Developer Intern</h3>
-              <div class="experience-company">Ricowell Development Ltd</div>
-              <ul class="experience-details">
-                <li>Handled API integration and rebuilt logic, leading to a 10% faster processing time</li>
-                <li>Developed and maintained web applications with React.js, Node.js, Tailwind CSS, and MSSQL Server</li>
-                <li>Optimized front-end components for performance across devices and browsers using techniques like pre-fetching and lazy loading</li>
-                <li>Provided technical support and guidance to colleagues</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience-item">
-            <div class="experience-date">
-              <span class="date-range">Jul 2018 - Jun 2019</span>
-            </div>
-            <div class="experience-content">
-              <h3 class="experience-title">Software Engineer Intern</h3>
-              <div class="experience-company">Miracle Paper Craft Ltd</div>
-              <ul class="experience-details">
-                <li>Worked on small features, bug fixes, and improvements in existing applications</li>
-                <li>Created SQL queries and unit tests with C and Java</li>
-                <li>Improved code logic, leading to a 15% increase in algorithm efficiency</li>
-                <li>Administered Linux (Ubuntu OS)</li>
-                <li>Documented user guidance for staff</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
+    <!-- Projects -->
+    <section class="index-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 class="section-title" id="projects-title">Selected projects</h2>
+        <span class="section-note">9 ENTRIES</span>
       </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <span class="row-date">EXPO · SUPABASE</span>
+          <div>
+            <h3 class="row-title">Zona</h3>
+            <ul class="row-details">
+              <li>Private, multi-source notification inbox for iOS and Android.</li>
+              <li>Any local app sends alerts through an authenticated Supabase Edge Function; Expo delivers the push and the app keeps a seven-day inbox.</li>
+              <li>Per-source tokens, custom notification sounds, and server-backed delivery settings.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">EXPO · REACT NATIVE</span>
+          <div>
+            <h3 class="row-title">GymCheck</h3>
+            <ul class="row-details">
+              <li>Hong Kong gym check-in app for tracking how crowded your gym is before you go.</li>
+              <li>Location-based check-ins with headcount statistics, built with Expo and React Native.</li>
+              <li>Shipped for iOS and Android under the Terabase banner.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">RN · SUPABASE</span>
+          <div>
+            <h3 class="row-title"><a href="https://youtube.com/shorts/Fua1cq08zkI?si=6fMfkptAlZQSPFTD" target="_blank" rel="noopener">TechScroll — IT knowledge threads</a></h3>
+            <ul class="row-details">
+              <li>React Native app delivering IT microlearning content with infinite scroll, Markdown, saving, and sharing.</li>
+              <li>Supabase backend for real-time content management and secure authentication.</li>
+              <li>Python script with the DeepSeek API automates topic generation.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">FLUTTER · HIVE</span>
+          <div>
+            <h3 class="row-title"><a href="https://github.com/terri-yaki/ootd-generator" target="_blank" rel="noopener">OOTD Generator</a></h3>
+            <ul class="row-details">
+              <li>Cross-platform Flutter app that generates random outfits from the user’s wardrobe.</li>
+              <li>Add, edit, and delete clothing items with photo, name, tags, and category.</li>
+              <li>Hive for local persistence; deployed on Android and Desktop.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">PYTHON · OPENAI</span>
+          <div>
+            <h3 class="row-title">DocGPT (ReadmeGPT)</h3>
+            <ul class="row-details">
+              <li>Python CLI that scans undocumented GitHub repositories and generates README.md files with the OpenAI API.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">PYTHON · FLASK</span>
+          <div>
+            <h3 class="row-title">Adaptive Route Planner</h3>
+            <ul class="row-details">
+              <li>Real-time route planning based on user preferences, built with Python and Flask.</li>
+              <li>Integrates OpenStreetMap and Nominatim; front end in vanilla JavaScript, HTML, and CSS.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">PYTORCH</span>
+          <div>
+            <h3 class="row-title">Skin Cancer Detection and Classification</h3>
+            <ul class="row-details">
+              <li>Deep-learning detection system using ResNet18 and BYOL for unsupervised learning.</li>
+              <li>Improved classification accuracy on the HAM10000 dataset through augmentation and fine-tuning across VGG16_bn and ResNet18.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">MS PROJECT</span>
+          <div>
+            <h3 class="row-title">Airbnb Development Project Proposal</h3>
+            <ul class="row-details">
+              <li>Team of five; proposal to modernize properties near the Brighton and Hove waterfront.</li>
+              <li>Contributed financial analysis, scoping, and budgeting in Microsoft Project.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">ASSEMBLY</span>
+          <div>
+            <h3 class="row-title">Hangman in Assembly</h3>
+            <ul class="row-details">
+              <li>A Hangman game written entirely in Assembly — coursework in low-level programming.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Projects<span class="dot">.</span>forEach()</h2>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">TechScroll – IT Knowledge Threads</h3><a href="https://youtube.com/shorts/Fua1cq08zkI?si=6fMfkptAlZQSPFTD" target="_blank" class="project-link">
-                <span class="material-icons">play_circle_filled</span>
-              </a>
-              <div class="project-links">
-                
-                <span class="project-tag">#React Native</span>
-                <span class="project-tag">#Supabase</span>
-                <span class="project-tag">#Python</span>
-
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Built a React Native mobile app that delivers IT-related microlearning content</li>
-                <li>Implemented infinite scrolling, Markdown support, content saving, and sharing features</li>
-                <li>Implemented Supabase as a scalable backend solution, enabling real-time content management and secure user authentication</li>
-                <li>Automated content fetching using a Python script with DeepSeek API for topic generation</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">OOTD Generator</h3>
-              <div class="project-links">
-                <a href="https://github.com/terri-yaki/ootd-generator" target="_blank" class="project-link">
-                  <span class="material-icons">code</span>
-                </a>
-                <span class="project-tag">#Flutter</span>
-                <span class="project-tag">#Hive</span>
-                <span class="project-tag">#Cross-platform</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Developed a cross-platform Flutter app that generates random outfits from user's wardrobe</li>
-                <li>Implemented core functionalities including adding, editing, and deleting clothing items (with photo, name, tags, and category)</li>
-                <li>Integrated smooth swipe animations for dismissing and reloading outfit displays</li>
-                <li>Utilized Hive for local data persistence to ensure wardrobe data remains saved across sessions</li>
-                <li>Deployed on Android and Desktop</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">DocGPT (ReadmeGPT)</h3>
-              <div class="project-links">
-                <span class="project-tag">#Python</span>
-                <span class="project-tag">#OpenAI API</span>
-                <span class="project-tag">#CLI</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Python-based CLI application using OpenAI API</li>
-                <li>Automatically generates README.md files for undocumented GitHub repositories</li>
-                <li>Scans repositories to create comprehensive documentation for developers</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Adaptive Route Planner</h3>
-              <div class="project-links">
-                <span class="project-tag">#Python</span>
-                <span class="project-tag">#Flask</span>
-                <span class="project-tag">#OpenStreetMap</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Developed an adaptive route planner web application</li>
-                <li>Real-time route planning based on user preferences</li>
-                <li>Built with Python and Flask, integrating OpenStreetMap and Nominatim APIs</li>
-                <li>Frontend designed with JavaScript, HTML, and CSS</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Skin Cancer Detection and Classification</h3>
-              <div class="project-links">
-                <span class="project-tag">#Python</span>
-                <span class="project-tag">#PyTorch</span>
-                <span class="project-tag">#Deep Learning</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Developed a deep learning-based Skin Cancer Detection System using ResNet18 and BYOL (Bootstrap Your Own Latent) for unsupervised learning.</li>
-                <li>Optimized model performance, achieving improved classification accuracy on the Ham10000 dataset.</li>
-                <li>Implemented data augmentation, model fine-tuning, and experimentation with multiple architectures (VGG16_bn, ResNet18).</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Airbnb Development Project Proposal</h3>
-              <div class="project-links">
-                <span class="project-tag">#Project Management</span>
-                <span class="project-tag">#MS Project</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Collaborative project in a team of 5</li>
-                <li>Developed a proposal to modernize properties near Brighton and Hove waterfront</li>
-                <li>Contributed to financial analysis, scoping, and budgeting using Microsoft Project</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3 class="project-title">Hangman in Assembly</h3>
-              <div class="project-links">
-                <span class="project-tag">#Assembly</span>
-                <span class="project-tag">#Low-level</span>
-              </div>
-            </div>
-            <div class="project-body">
-              <ul class="project-details">
-                <li>Built a Hangman game entirely in Assembly language</li>
-                <li>Coursework project showcasing low-level programming skills</li>
-              </ul>
-            </div>
-          </div>
+    <!-- Terabase -->
+    <section class="index-section" id="business" aria-labelledby="business-title">
+      <div class="section-head">
+        <h2 class="section-title" id="business-title">Terabase</h2>
+        <span class="section-note">SIDE STUDIO</span>
+      </div>
+      <div class="terabase-block">
+        <p class="terabase-intro">
+          <strong>Terabase</strong> is a small web-development studio I run on the side —
+          professional sites for businesses that need something tailored rather than templated.
+          Custom development, responsive design, e-commerce, and ongoing maintenance, built with
+          HTML, CSS, JavaScript, React, Node.js, and Shopify.
+        </p>
+        <ul class="service-list">
+          <li><span>Custom development</span><span class="svc-note">FROM SCRATCH</span></li>
+          <li><span>Responsive design</span><span class="svc-note">ALL DEVICES</span></li>
+          <li><span>E-commerce</span><span class="svc-note">SHOPIFY</span></li>
+          <li><span>Performance</span><span class="svc-note">SEO + SPEED</span></li>
+        </ul>
+        <div class="terabase-contact" id="contact-terabase">
+          <a href="https://terabase.cc" target="_blank" rel="noopener">terabase.cc</a>
+          <a href="mailto:terabasedevteam@gmail.com">terabasedevteam@gmail.com</a>
+          <a href="tel:+85292805058">+852 9280 5058</a>
         </div>
       </div>
-    </section>
-
-    <!-- Business Section -->
-    <section class="section" id="business">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Terabase<span class="dot">.</span>build()</h2>
-        </div>
-        <div class="business-container">
-          <div class="business-header">
-            <div class="business-logo">
-              <img src="https://terabase.cc/logo.png" alt="Terabase Logo" class="terabase-image">
-              <div class="business-title">
-                <h3>Terabase</h3>
-                <p>Professional Web Development Solutions</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="business-content">
-            <div class="business-description">
-              <div class="terminal">
-                <div class="terminal-header">
-                  <span class="terminal-button"></span>
-                  <span class="terminal-button"></span>
-                  <span class="terminal-button"></span>
-                  <span class="terminal-title">terabase@services: ~/web-solutions</span>
-                </div>
-                <div class="terminal-content">
-                  <p class="terminal-line">
-                    <span class="prompt">$</span> 
-                    <span class="command">cat services.json</span>
-                  </p>
-                  <div class="terminal-output">
-                    <pre><code>{
-  "services": [
-    "Custom Website Development",
-    "Responsive Design",
-    "E-commerce Solutions",
-    "Web Application Development",
-    "UI/UX Design",
-    "Website Maintenance"
-  ],
-  "technologies": [
-    "HTML5", "CSS3", "JavaScript",
-    "React", "Node.js",
-    "Shopify"
-  ]
-}</code></pre>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="business-services">
-            <div class="service-cards">
-              <div class="service-card">
-                <span class="material-icons">code</span>
-                <h4>Custom Development</h4>
-                <p>Tailored websites built from scratch to meet your specific business needs and goals.</p>
-              </div>
-              <div class="service-card">
-                <span class="material-icons">devices</span>
-                <h4>Responsive Design</h4>
-                <p>Mobile-friendly websites that look great on all devices and screen sizes.</p>
-              </div>
-              <div class="service-card">
-                <span class="material-icons">shopping_cart</span>
-                <h4>E-commerce</h4>
-                <p>Online stores with secure payment processing and inventory management.</p>
-              </div>
-              <div class="service-card">
-                <span class="material-icons">speed</span>
-                <h4>Performance</h4>
-                <p>Fast-loading websites optimized for search engines and user experience.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="business-cta">
-            <h3>Ready to transform your online presence?</h3>
-            <p>Let's discuss how Terabase can help your business succeed online.</p>
-            <div class="cta-buttons">
-              <a href="https://terabase.cc" target="_blank" class="cta-button">
-                <span class="material-icons">language</span>
-                Visit Website
-              </a>
-              <a href="#contact-terabase" class="cta-button secondary">
-                <span class="material-icons">email</span>
-                Get in Touch
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="business-contact" id="contact-terabase">
-          <h3>Contact Terabase</h3>
-          <div class="contact-methods">
-            <div class="contact-method">
-              <span class="material-icons">email</span>
-              <div>
-                <h4>Email</h4>
-                <a href="mailto:terabasedevteam@gmail.com">terabasedevteam@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-method">
-              <span class="material-icons">phone</span>
-              <div>
-                <h4>Phone</h4>
-                <a href="tel:+85292805058">+852 9280 5058</a>
-              </div>
-            </div>
-            <div class="contact-method">
-              <span class="material-icons">language</span>
-              <div>
-                <h4>Website</h4>
-                <a href="https://terabase.cc" target="_blank">terabase.cc</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
     </section>
 
     <!-- Certifications -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Certifications<span class="dot">.</span>verify()</h2>
-        </div>
-        <div class="certifications-container">
-          <div class="certification-card">
-            <div class="certification-icon">
-              <span class="material-icons">verified</span>
-            </div>
-            <div class="certification-content">
-              <h3 class="certification-title">IBM AI Developer</h3>
-              <p class="certification-issuer">IBM</p>
-              <a href="https://www.coursera.org/account/accomplishments/professional-cert/PG5JZ16N6ML7" target="_blank" class="certification-link">
-                View Certificate <span class="material-icons">open_in_new</span>
-              </a>
-            </div>
-          </div>
-        </div>
+    <section class="index-section" id="certifications" aria-labelledby="certifications-title">
+      <div class="section-head">
+        <h2 class="section-title" id="certifications-title">Certifications</h2>
+        <span class="section-note">1 ENTRY</span>
       </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <span class="row-date">IBM · COURSERA</span>
+          <div>
+            <h3 class="row-title"><a href="https://www.coursera.org/account/accomplishments/professional-cert/PG5JZ16N6ML7" target="_blank" rel="noopener">IBM AI Developer — view certificate</a></h3>
+            <p class="row-org">IBM Professional Certificate</p>
+          </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- Fun Fact -->
-    <section class="section" id="fun-fact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">FunFact<span class="dot">.</span>random()</h2>
-        </div>
-        <div class="fun-fact-container">
-          <div class="code-snippet">
-            <pre><code><span class="comment">// A glimpse into my life outside coding</span>
-<span class="keyword">const</span> <span class="variable">hobbies</span> = {
-  <span class="key">gaming</span>: {
-    <span class="key">fps</span>: [<span class="string">'Valorant'</span>,<span class="string">'Overwatch'</span>, <span class="string">'Apex Legends'</span>, <span class="string">'Rainbow Six Siege'</span>],
-    <span class="key">totalHours</span>: <span class="number">5000</span>+
-  },
-  <span class="key">pets</span>: <span class="string">'Love both cats and dogs!'</span>
-};</code></pre>
-          </div>
-        </div>
+    <!-- Off-screen -->
+    <section class="index-section" id="fun-fact" aria-labelledby="offscreen-title">
+      <div class="section-head">
+        <h2 class="section-title" id="offscreen-title">Off-screen</h2>
       </div>
+      <p class="terabase-intro">
+        Outside of work: FPS games — Valorant, Overwatch, Apex Legends, Rainbow Six Siege —
+        with 5,000+ hours on the clock. Equally fond of cats and dogs. Big nerd of AI.
+      </p>
     </section>
-
-    
 
     <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Contact<span class="dot">.</span>connect()</h2>
-        </div>
-        <div class="contact-container">
-          <div class="contact-card">
-            <a href="mailto:hoyulee@yahoo.com.hk" class="contact-item">
-              <span class="material-icons">mail</span>
-              <span class="contact-text"><span class="__cf_email__">Email</span></span>
-            </a>
-            <a href="https://linkedin.com/in/terrylhyyy" target="_blank" class="contact-item">
-              <span class="material-icons">link</span>
-              <span class="contact-text">LinkedIn</span>
-            </a>
-            <a href="https://github.com/terri-yaki" target="_blank" class="contact-item">
-              <span class="material-icons">code</span>
-              <span class="contact-text">GitHub</span>
-            </a>
-          </div>
-        </div>
+    <section class="index-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-head">
+        <h2 class="section-title" id="contact-title">Contact</h2>
       </div>
+      <ul class="contact-list">
+        <li><a href="mailto:hoyulee@yahoo.com.hk"><span class="contact-kind">Email</span><span class="contact-value">hoyulee@yahoo.com.hk</span></a></li>
+        <li><a href="https://linkedin.com/in/terrylhyyy" target="_blank" rel="noopener"><span class="contact-kind">LinkedIn</span><span class="contact-value">linkedin.com/in/terrylhyyy</span></a></li>
+        <li><a href="https://github.com/terri-yaki" target="_blank" rel="noopener"><span class="contact-kind">GitHub</span><span class="contact-value">github.com/terri-yaki</span></a></li>
+      </ul>
     </section>
+
   </main>
 
-  <!-- Go to top button -->
-  <button id="toTop">
-    <span class="material-icons">keyboard_arrow_up</span>
-  </button>
+  <!-- Ft4 · dense colophon -->
+  <footer class="page colophon">
+    <p>
+      Terry Lee — software developer, Hong Kong. Junior Programmer at the Hong Kong Hospital
+      Authority; BSc Computer Science, University of Surrey. Set in Newsreader, IBM Plex Sans,
+      and JetBrains Mono. One HTML file, one stylesheet, no framework. Also writes code as
+      <a href="https://github.com/terri-yaki" target="_blank" rel="noopener">terri-yaki</a>
+      and builds websites at <a href="https://terabase.cc" target="_blank" rel="noopener">terabase.cc</a>.
+      © 2026.
+    </p>
+  </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script>
-    const loader = document.getElementById('loader');
-    const body = document.body;
-    const themeToggle = document.getElementById('themeToggle');
-    const toTopBtn = document.getElementById('toTop');
-    const header = document.getElementById('header');
-    const themeIcon = themeToggle.querySelector('.material-icons');
-
-    // redirect portfolio to index
+    // Redirect GitHub Pages host to the canonical domain
     if (window.location.hostname === "terri-yaki.github.io") {
       window.location.href = "https://terriyaki.cc";
     }
 
-    // Loader
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        loader.classList.add('hidden');
-      }, 1500);
-    });
-
-    // Dark/Light Mode Toggle
+    // Dark / light toggle
+    const themeToggle = document.getElementById('themeToggle');
     themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      if (body.classList.contains('dark-mode')) {
-        themeIcon.textContent = 'light_mode';
-      } else {
-        themeIcon.textContent = 'dark_mode';
-      }
-    });
-
-    // Go to top button
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        toTopBtn.classList.add('show');
-      } else {
-        toTopBtn.classList.remove('show');
-      }
-      
-      // Add shadow to header when scrolling
-      if (window.scrollY > 10) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-    
-    toTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Mobile Nav Controls
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileNav = document.getElementById('mobileNav');
-    const closeBtn = document.getElementById('closeBtn');
-    const navLinks = document.querySelectorAll('.mobile-nav-links a');
-
-    // Open mobile nav
-    menuToggle.addEventListener('click', () => {
-      mobileNav.classList.add('open');
-    });
-
-    // Close mobile nav
-    closeBtn.addEventListener('click', () => {
-      mobileNav.classList.remove('open');
-    });
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-      });
-    });
-
-    // Highlight active section in navigation
-    const sections = document.querySelectorAll('.section');
-    const navItems = document.querySelectorAll('.nav-link');
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        
-        if (scrollY >= (sectionTop - 300)) {
-          current = section.getAttribute('id');
-        }
-      });
-      
-      navItems.forEach(item => {
-        item.classList.remove('active');
-        if (item.getAttribute('href').substring(1) === current) {
-          item.classList.add('active');
-        }
-      });
+      const dark = document.body.classList.toggle('dark-mode');
+      themeToggle.textContent = dark ? 'Light' : 'Dark';
+      themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
     });
   </script>
 </body>
