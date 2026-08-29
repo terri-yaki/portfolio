@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Zona — Stay tuned, Stay notified</title>
+  <meta name="description" content="Zona is a private, multi-source notification inbox for iOS and Android. Name a source per machine or app; alerts land in a durable inbox with push, severity levels, and Live Activities." />
+  <link rel="canonical" href="https://terriyaki.cc/zona/" />
+  <!-- Fonts: Newsreader (display) · IBM Plex Sans (body) · JetBrains Mono (outlier) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@350;400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔔</text></svg>">
+</head>
+<body>
+
+  <header class="site-nav">
+    <a class="wordmark" href="https://terriyaki.cc">Terry&nbsp;lee</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">Dark</button>
+  </header>
+
+  <main class="page" id="top">
+
+    <section class="masthead">
+      <h1 class="masthead-title"><span class="role">Zona</span> — Stay tuned, Stay&nbsp;notified.</h1>
+      <p class="masthead-lede">
+        A private, multi-source notification inbox for iOS and Android.
+        Name a source per machine or local app; alerts land in a durable
+        seven-day inbox with push, severity levels, Live Activities, and
+        per-source sounds. Opens ready to use: recent alerts appear
+        immediately, stay readable offline, and resync quietly when you
+        reconnect.
+      </p>
+      <p class="masthead-meta">iOS · ANDROID · WINDOWS COMPANION</p>
+    </section>
+
+    <!-- Get it -->
+    <section class="index-section" id="get" aria-labelledby="get-title">
+      <div class="section-head">
+        <h2 class="section-title" id="get-title">Get Zona</h2>
+        <span class="section-note">3 LINKS</span>
+      </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <span class="row-date">iOS · TESTFLIGHT</span>
+          <div>
+            <h3 class="row-title"><a href="https://testflight.apple.com/join/pbPSCXWQ" target="_blank" rel="noopener">Zona Notify</a></h3>
+            <ul class="row-details">
+              <li>Join the TestFlight to install the iOS app today.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">WINDOWS · PORTABLE</span>
+          <div>
+            <h3 class="row-title"><a href="https://github.com/terri-yaki/zona-desktop" target="_blank" rel="noopener">Zona for Desktop</a></h3>
+            <ul class="row-details">
+              <li>Portable Windows companion — sign in with the same account as the phone app, manage source keys, and schedule notifications. Runs without installation.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">DEVELOPERS · API</span>
+          <div>
+            <h3 class="row-title"><a href="https://gist.github.com/terri-yaki/b1cdbf91263f139f928de292f788d5bc" target="_blank" rel="noopener">API guide</a></h3>
+            <ul class="row-details">
+              <li>Send notifications from any PC, script, or local app with a source token and one HTTPS POST.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- How it works -->
+    <section class="index-section" id="how" aria-labelledby="how-title">
+      <div class="section-head">
+        <h2 class="section-title" id="how-title">How it works</h2>
+        <span class="section-note">3 STEPS</span>
+      </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <span class="row-date">1 · SEND</span>
+          <div>
+            <h3 class="row-title">Any source posts an alert</h3>
+            <ul class="row-details">
+              <li>An app, script, or AI agent sends one authenticated POST with its own source token. Idempotency keys make retries safe.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">2 · STORE</span>
+          <div>
+            <h3 class="row-title">The inbox keeps the record</h3>
+            <ul class="row-details">
+              <li>A Supabase Edge Function validates the token and writes the durable inbox row. The row is the record; push is best-effort on top.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">3 · DELIVER</span>
+          <div>
+            <h3 class="row-title">A worker pushes to your devices</h3>
+            <ul class="row-details">
+              <li>Push delivery retries provider failures instead of dropping alerts. Quiet hours still accept the row — only the push is held.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Features -->
+    <section class="index-section" id="features" aria-labelledby="features-title">
+      <div class="section-head">
+        <h2 class="section-title" id="features-title">Details</h2>
+        <span class="section-note">6 ENTRIES</span>
+      </div>
+      <ul class="index-list">
+        <li class="index-row">
+          <span class="row-date">SOURCES</span>
+          <div>
+            <h3 class="row-title">Multi-source inbox</h3>
+            <ul class="row-details">
+              <li>One source token per machine or app, so every alert is attributable and the inbox stays filterable.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">SEVERITY</span>
+          <div>
+            <h3 class="row-title">Levels, categories, sounds</h3>
+            <ul class="row-details">
+              <li>Alerts carry a severity from low to critical plus an optional category, with per-source notification sounds.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">iOS</span>
+          <div>
+            <h3 class="row-title">Live Activities</h3>
+            <ul class="row-details">
+              <li>Ongoing work surfaces on the Lock Screen and Dynamic Island while it runs.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">OFFLINE</span>
+          <div>
+            <h3 class="row-title">Readable without a network</h3>
+            <ul class="row-details">
+              <li>Recent alerts are cached on device and resync quietly when you reconnect.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">ATTACHMENTS</span>
+          <div>
+            <h3 class="row-title">Images in alerts</h3>
+            <ul class="row-details">
+              <li>Attach up to five images — screenshots, build artifacts, or charts straight to the phone.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="index-row">
+          <span class="row-date">STACK</span>
+          <div>
+            <h3 class="row-title">Expo · Supabase · PLpgSQL</h3>
+            <ul class="row-details">
+              <li>React Native app built with Expo; Supabase Edge Functions ingest; a PLpgSQL worker delivers.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="page colophon">
+    <p>
+      Zona is built by <a href="https://terriyaki.cc">Terry Lee</a>, software developer, Hong Kong. © 2026.
+    </p>
+  </footer>
+
+  <script>
+    // Dark / light toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      const dark = document.body.classList.toggle('dark-mode');
+      themeToggle.textContent = dark ? 'Light' : 'Dark';
+      themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    });
+  </script>
+</body>
+</html>
